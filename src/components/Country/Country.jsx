@@ -1,14 +1,18 @@
 import './Country.css'
-const Country = ({country}) => {
+const Country = ({ country }) => {
     console.log(country)
-    const {name, flags, population, language, maps} = country;
+    const { name, flags, population, language, maps, cca3 } = country;
     return (
         <div className="country" >
-            <h3>Name: {name?.common} </h3>
             <img src={flags.png} alt="" />
-            <p>Population: {population}</p>
-            <p>Language: {language} </p>
-            <a href={maps.googleMaps}>Map</a>
+            <h3>Name: {name?.common} </h3>
+            <div className='objects'>
+                <p>Population: {population}</p>
+                <p>Language: {language} </p>
+                <a href={maps.googleMaps}>Map</a>
+                <p><small>Code:{cca3}</small></p>
+            </div>
+            <button>Visited</button>
         </div>
     );
 };

@@ -4,3 +4,12 @@
     padding: 15px;
     border-radius: 15px;
 }
+
+.objects{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3px;
+    /* justify-items: center; */
+    align-items: center;
+    text-align: start;
+}
