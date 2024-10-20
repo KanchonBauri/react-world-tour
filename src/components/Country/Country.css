@@ -13,3 +13,8 @@
     align-items: center;
     text-align: start;
 }
+
+.flag{
+    height: 150px;
+    width: full;
+}

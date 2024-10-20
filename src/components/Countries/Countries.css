@@ -1,9 +1,23 @@
-.country-container{
+.country-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
 }
 
-.visited{
+.visited {
     background-color: bisque;
+}
+
+.flag-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 5px;
+    background-color: aqua;
+    border-radius: 15px;
+    padding: 15px;
+}
+
+.visited-flag {
+    width: 80%;
+    height: 80%;
 }
